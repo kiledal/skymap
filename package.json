@@ -7,6 +7,10 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "d3": "^7.1.1",
+    "three": "^0.134.0",
+    "three-geojson-geometry": "^1.1.5",
+    "three-trackballcontrols": "^0.9.0",
     "vue": "^3.2.16"
   },
   "devDependencies": {

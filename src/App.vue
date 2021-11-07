@@ -1,6 +1,25 @@
-<script setup></script>
+<template>
+  <div ref="root"></div>
+</template>
 
-<template>skymap</template>
+<script>
+import { onMounted, ref } from '@vue/runtime-core';
+import StarMap from './lib/StarMap';
+
+export default {
+  setup() {
+    const root = ref(null);
+
+    onMounted(() => {
+      new StarMap(root.value);
+    });
+
+    return {
+      root,
+    };
+  },
+};
+</script>
 
 <style>
 body {
